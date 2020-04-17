@@ -3,7 +3,6 @@ import csv
 
 
 raw_file_path = os.path.join("..","Resources","cereal.csv")
-#raw_file_path = os.path.join('..',"C:\\Users\\SeaLord\\class\\TK-GW-HW\\week_3_Python\\Part-1-Mini-Assignment\\02-HW_CerealCleaner\\Unsolved\\cereal.csv")
 
 with open(raw_file_path, 'r') as openfile:
         filereader = csv.reader(openfile, delimiter=",")

@@ -1,0 +1,9 @@
+
+Financial Analysis
+------------------------------------------------------------------------------------------
+Bank profits across 86 months :
+	Net profit [ $  38,382,578.00]
+	Average profit [ $  446,309.05] ( $  38,382,578.00 / 86)
+	The highest profit increase month was Feb-2012, posting [ $  1,170,593.00] gain.)
+	The highest profit loss month was Sep-2013, posting [ $  -1,196,225.00] lost.)
+------------------------------------------------------------------------------------------
