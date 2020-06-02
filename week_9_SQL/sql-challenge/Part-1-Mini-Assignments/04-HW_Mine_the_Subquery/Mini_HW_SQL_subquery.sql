@@ -47,7 +47,7 @@ WHERE film_id IN (
     )
 ORDER BY title
 
---- How much profit did Jon earn the store and on what film?
+--- How much profit did Jon earn the store and on what films?
 -- first as a VIEW
 -- DROP VIEW js_rentals
 
