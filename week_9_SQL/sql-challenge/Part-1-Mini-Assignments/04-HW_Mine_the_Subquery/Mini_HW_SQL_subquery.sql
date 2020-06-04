@@ -24,7 +24,7 @@ WHERE actor_id IN (
         FROM film
         WHERE title = 'ALTER VICTORY'
     )
-)
+);
 
 -- * Using subqueries, 
 -- display the titles of films that the employee Jon Stephens rented to customers.
@@ -45,7 +45,7 @@ WHERE film_id IN (
             )
         )
     )
-ORDER BY title
+ORDER BY title;
 
 --- How much profit did Jon earn the store and on what films?
 -- first as a VIEW
@@ -62,7 +62,7 @@ SELECT film_id, inventory_id
             FROM staff
             WHERE first_name = 'Jon' AND last_name = 'Stephens'
             )
-        )
+        );
 
 -- SELECT * FROM js_rentals
 
@@ -70,7 +70,7 @@ SELECT DISTINCT f.title, f.rental_rate, (count(j.inventory_id) * f.rental_rate) 
 FROM film f, js_rentals j, rental r
 WHERE f.film_id = j.film_id AND j.inventory_id = r.inventory_id
 GROUP BY f.title, f.rental_rate
-ORDER BY sales_total, f.title
+ORDER BY sales_total, f.title;
 
 -- now for some off the books SQL fun....
 
@@ -94,11 +94,11 @@ FROM film f, ( SELECT film_id, inventory_id
         ) ) j, rental r
 WHERE f.film_id = j.film_id AND j.inventory_id = r.inventory_id
 GROUP BY f.rating, f.title, f.rental_rate 
-ORDER BY f.rating DESC, sales_total DESC, times_rented, f.title
+ORDER BY f.rating DESC, sales_total DESC, times_rented, f.title;
 
-SELECT * FROM js_rentals
+SELECT * FROM js_rentals;
 
 SELECT rating, count(rating) AS times_rented , sum(sales_total)
 FROM js_rentals
 GROUP BY rating
-ORDER BY times_rented DESC
+ORDER BY times_rented DESC;
