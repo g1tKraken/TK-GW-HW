@@ -1,0 +1,40 @@
+/* web vis style.css */
+
+#vis_images {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#imageNav-area {
+    width: 100%;
+    /* Box-model */
+    padding: 30px 30px 43px;
+    /* Positioning */
+    margin-top: 32px;
+    /* Visual */
+    background-color: #fff;
+}
+
+.imageNav-header {
+    /* Positioning */
+    margin-bottom: 15px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    /* Typography */
+    font-size: 25px;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+.imageNav-photo {
+    width: 140px;
+    height: 140px;
+    opacity: 0.5;
+}
+
+.imageNav-photo:hover {
+    opacity: 1;
+}
+
+.imageNav-photo.active {
+    border: 2px solid #4aaaa5;
+}
